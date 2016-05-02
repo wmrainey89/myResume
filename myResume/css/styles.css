@@ -1,0 +1,20 @@
+body {
+    background-color: #545859;
+}
+
+#myPhoto {
+    text-align: center;
+}
+
+#photo {
+    height: 31em;
+    width: 33em;
+}
+
+.fontz {
+    font-family: Vollkorn;
+}
+
+#contactMe {
+    background-color: #545859;
+}
