@@ -1,0 +1,79 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#/">WMR</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <!--<li class="active"><a href="#">Home</a></li>-->
+                <li><a ng-click="gotoAboutMe()">About Me</a></li>
+                <li><a ng-click="gotoWorkExperience()">Work Experience</a></li>
+                <li><a ng-click="gotoKnowledge()">Education</a></li>
+                <li><a ng-click="gotoContactMe()">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="page-header">
+        <div class="jumbotron">
+            <h1 class="fontz text-center header">William Rainey</h1>
+            <h3 class="fontz text-center header">Front End Engineer</h3>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div id="myPhoto">
+        <div class="container col-md-12">
+            <img class=" well well-sm" id="photo" src="myResume/Images/myResumePhoto.jpeg" alt="Resume Photo">
+        </div>
+    </div>
+</div>
+
+    <a id="aboutMe"></a>
+    <div class="container">
+        <div class="jumbotron">
+            <h2 class="fontz text-center header">About Me</h2>
+            <p>Hello,
+                my name is William Rainey, I am 26 years old and eager for work. I was born
+                and raised in Birmingham, AL. I am an Eagle Scout, which I got at the age
+                of 17. I enjoy crappie fishing, wood working, and helping others out in my
+                free time with no intentions of payment. I am a very hard worker and I do
+                my best to be a fast learner.  
+            </p>
+        </div>
+    </div>
+<a id="workExperience"></a>
+    <div class="container">
+        <div class="jumbotron">
+            <h2 class="fontz text-center header">Work Experience</h2>
+            <p>For most of my life I have had hard labor based jobs. With this being said,
+                it is not to say that this is my limitation on the type of work that I can 
+                perform. For 10 1/2 weeks I attended the Depot/U front end developer bootcamp,
+                which is located inside of the Innovation Depot building in downtown Birmingham.
+                I am capable of using html/css, javascript, angularjs, and bootstrap.
+            </p>
+            <div ng-click="gotoWorkHist()">More details</div>
+        </div>
+    </div>
+
+<a id="knowledge"></a>
+    <div class="container">
+        <div class="jumbotron">
+            <h2 class="fontz text-center header">Education</h2>
+            <p>I am a graduate of Hoover High School, I went to college at the University
+                of North Alabama for approximately 2 1/2 years until complications brought
+                me back home. While I was there I was working towards a bachelors in Computer
+                Information Systems with a minor of Computer Science. I graduated from the 
+                Depot/U front end developer bootcamp on April 29, 2016.
+            </p>
+            <div ng-click="gotoSchool()">More details</div>
+        </div>
+    </div>
+    
