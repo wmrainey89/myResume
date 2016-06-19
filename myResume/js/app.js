@@ -19,6 +19,16 @@ angular.module("app", ["ngRoute", "ui.bootstrap"])
         controller: "eduHistoryCtrl"
     })
     
+    .when("/portfolio", {
+        templateUrl: "myResume/views/portfolio.html",
+        controller: "portfolioCtrl"
+    })
+    
+    .when("/contact", {
+        templateUrl: "myResume/views/contact.html",
+        controller: "contactCtrl"
+    })
+    
     .otherwise({
         redirectTo: "/"
     });

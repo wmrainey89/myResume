@@ -18,3 +18,31 @@ body {
 #contactMe {
     background-color: #545859;
 }
+
+.details {
+    color: blue;    
+}
+
+.headers {
+    color: #ffffff;
+    font-family: Vollkorn;
+}
+
+.employment {
+    list-style-type: none;
+}
+/*Global View Styles*/
+.content {
+    font-family: Vollkorn;
+    font-size: 2.5em;
+}
+
+.content-header {
+    font-family: Vollkorn;
+    font-size: 3em;
+    
+}
+
+.navGap {
+    padding-top: 1em;
+}

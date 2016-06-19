@@ -8,4 +8,6 @@ function workHistoryController($scope, $location) {
     $scope.gotoHome = function() {
         $location.path("/home");
     }
+    
+    
 }

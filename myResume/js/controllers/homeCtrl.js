@@ -2,41 +2,50 @@ angular.module("app")
 
 .controller("homeCtrl", homeController);
 
-homeController.$inject = ["$scope", "$location", "$anchorScroll"];
+homeController.$inject = ["$scope", "$location"];
 
-function homeController($scope, $location, $anchorScroll) {
+function homeController($scope, $location) {
     $scope.gotoAboutMe = function() {
-        $location.hash("aboutMe");
+        $location.path("aboutMe");
         
-        $anchorScroll();
+       
         
     }
     
-    $scope.gotoWorkExperience = function() {
-        $location.hash("workExperience");
+    // $scope.gotoWorkExperience = function() {
+    //     $location.hash("workExperience");
         
-        $anchorScroll();
-    } 
+    //     $anchorScroll();
+    // } 
     
-    $scope.gotoKnowledge = function() {
-        $location.hash("knowledge");
+    // $scope.gotoKnowledge = function() {
+    //     $location.hash("knowledge");
         
-        $anchorScroll();
-    }
+    //     $anchorScroll();
+    // }
     
     $scope.gotoContactMe = function() {
-        $location.hash("contactMe");
+        $location.path("/contact");
         
-        $anchorScroll();
     }
     
-    $scope.gotoSchool = function() {
+    $scope.gotoKnowledge = function() {
         $location.path("/education");
         
         
     }
     
-    $scope.gotoWorkHist = function() {
+    $scope.gotoWorkExperience = function() {
         $location.path("/workHistory")
     }
+    
+    $scope.gotoPortfolio = function() {
+        $location.path("/portfolio")
+    }
+    
+    // function myFunction(){
+    // var str = "does it work?";
+    // var result = str.link("https://form.jotform.com/jsform/61225573203144");
+    // document.getElementById("demo").innerHTML = result;
+    // }     
 }
